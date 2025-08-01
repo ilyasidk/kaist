@@ -48,13 +48,24 @@ def start_chrome(url):
         # Команда для запуска Chrome
         chrome_cmd = ['google-chrome'] + CHROME_OPTIONS + [url]
         
+        print(f"Запускаем Chrome с командой: {' '.join(chrome_cmd)}")
+        
         # Запускаем Chrome
-        chrome_process = subprocess.Popen(chrome_cmd)
+        chrome_process = subprocess.Popen(chrome_cmd, 
+                                        stdout=subprocess.PIPE, 
+                                        stderr=subprocess.PIPE)
         
-        chrome_running = True
-        print(f"Chrome запущен с URL: {url}")
-        
-        return True
+        # Проверяем, что процесс запустился
+        time.sleep(3)
+        if chrome_process.poll() is None:
+            chrome_running = True
+            print(f"Chrome успешно запущен с URL: {url}")
+            return True
+        else:
+            stdout, stderr = chrome_process.communicate()
+            print(f"Chrome завершился с ошибкой. stdout: {stdout}, stderr: {stderr}")
+            chrome_running = False
+            return False
         
     except Exception as e:
         print(f"Ошибка запуска Chrome: {e}")
@@ -94,6 +105,8 @@ def monitor_chrome():
     """Мониторинг состояния Chrome"""
     global chrome_process, chrome_running
     
+    print("Мониторинг Chrome запущен")
+    
     while True:
         try:
             if chrome_process:
@@ -103,6 +116,9 @@ def monitor_chrome():
                     chrome_running = False
                     time.sleep(RESTART_DELAY)
                     start_chrome(chrome_url)
+            else:
+                print("Chrome процесс не найден, запускаем...")
+                start_chrome(chrome_url)
             
             time.sleep(MONITOR_INTERVAL)  # Проверяем каждые 30 секунд
             
@@ -190,19 +206,6 @@ def set_url():
         'message': 'URL не указан'
     })
 
-if __name__ == '__main__':
-    # Запускаем мониторинг Chrome в отдельном потоке
-    monitor_thread = threading.Thread(target=monitor_chrome, daemon=True)
-    monitor_thread.start()
-    
-    # Автоматически запускаем Chrome при старте приложения
-    time.sleep(2)
-    start_chrome(chrome_url)
-    
-    # Запускаем Flask приложение
-    port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port, debug=False)
-
 # Добавляем простую проверку для Render
 @app.route('/health')
 def health_check():
@@ -211,4 +214,20 @@ def health_check():
         'status': 'ok',
         'chrome_running': chrome_running,
         'timestamp': datetime.now().isoformat()
-    }) 
+    })
+
+if __name__ == '__main__':
+    # Запускаем мониторинг Chrome в отдельном потоке
+    monitor_thread = threading.Thread(target=monitor_chrome, daemon=True)
+    monitor_thread.start()
+    
+    # Автоматически запускаем Chrome при старте приложения
+    time.sleep(2)
+    try:
+        start_chrome(chrome_url)
+    except Exception as e:
+        print(f"Ошибка при автоматическом запуске Chrome: {e}")
+    
+    # Запускаем Flask приложение
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port, debug=False) 
