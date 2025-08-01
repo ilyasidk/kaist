@@ -49,17 +49,22 @@ def start_chrome(url):
         # Проверяем, что Chrome установлен
         chrome_binary = None
         try:
-            subprocess.run(['google-chrome', '--version'], capture_output=True, check=True)
-            chrome_binary = 'google-chrome'
-            print("Google Chrome найден и доступен")
+            subprocess.run(['chromium', '--version'], capture_output=True, check=True)
+            chrome_binary = 'chromium'
+            print("Chromium найден и доступен")
         except Exception as e:
             try:
                 subprocess.run(['chromium-browser', '--version'], capture_output=True, check=True)
                 chrome_binary = 'chromium-browser'
-                print("Chromium найден и доступен")
+                print("Chromium-browser найден и доступен")
             except Exception as e2:
-                print(f"Chrome/Chromium не найден: {e}, {e2}")
-                return False
+                try:
+                    subprocess.run(['google-chrome', '--version'], capture_output=True, check=True)
+                    chrome_binary = 'google-chrome'
+                    print("Google Chrome найден и доступен")
+                except Exception as e3:
+                    print(f"Chrome/Chromium не найден: {e}, {e2}, {e3}")
+                    return False
         
         # Команда для запуска Chrome
         chrome_cmd = [chrome_binary] + CHROME_OPTIONS + [url]

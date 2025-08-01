@@ -4,12 +4,12 @@ from sklearn.model_selection import train_test_split
 
 # ===== 1) Trainable Hyperparameters Only =====
 params = {
-    'n_hidden'     : 22,        # Hidden layer size  | Range: 10 ~ 200
-    'learning_rate': 0.0030,      # Learning rate      | Range: 0.001 ~ 0.1 (log scale)
-    'epochs'       : 300,       # Training epochs    | Range: 100 ~ 3000
+    'n_hidden'     : 54,        # Hidden layer size  | Range: 10 ~ 200
+    'learning_rate': 0.0095301091,      # Learning rate      | Range: 0.001 ~ 0.1 (log scale)
+    'epochs'       : 1145,       # Training epochs    | Range: 100 ~ 3000
     'activation_fn': 'sigmoid', # Activation fn      | Options: 'sigmoid', 'relu', 'tanh'
-    'noise'        : 0.55,       # Input noise        | Range: 0.5 ~ 1.5 (optional; for robustness test)
-    'test_ratio'   : 0.3        # Test split ratio   | Range: 0.2 ~ 0.5 (optional; affects evaluation scale)
+    'noise'        : 0.759997,       # Input noise        | Range: 0.5 ~ 1.5 (optional; for robustness test)
+    'test_ratio'   : 0.2037041        # Test split ratio   | Range: 0.2 ~ 0.5 (optional; affects evaluation scale)
 }
 
 # ===== 2) Constants (Not to beу changed) =====
