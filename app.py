@@ -17,17 +17,14 @@ DEFAULT_URL = "https://www.kaggle.com/code/ilyasmakhatov/notebook45e3b56ff8/edit
 CHROME_OPTIONS = [
     '--no-sandbox',
     '--disable-dev-shm-usage',
+    '--headless=new',  # Новый headless режим
     '--disable-gpu',
-    '--headless',  # Запуск в безголовом режиме
-    '--remote-debugging-port=9222',
-    '--user-data-dir=/tmp/chrome-data',
     '--disable-web-security',
     '--disable-features=VizDisplayCompositor',
     '--disable-extensions',
     '--disable-plugins',
-    '--disable-background-timer-throttling',
-    '--disable-backgrounding-occluded-windows',
-    '--disable-renderer-backgrounding'
+    '--window-size=1920,1080',
+    '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
 ]
 
 # Настройки мониторинга
@@ -49,8 +46,23 @@ def start_chrome(url):
             chrome_process.terminate()
             time.sleep(2)
         
+        # Проверяем, что Chrome установлен
+        chrome_binary = None
+        try:
+            subprocess.run(['google-chrome', '--version'], capture_output=True, check=True)
+            chrome_binary = 'google-chrome'
+            print("Google Chrome найден и доступен")
+        except Exception as e:
+            try:
+                subprocess.run(['chromium-browser', '--version'], capture_output=True, check=True)
+                chrome_binary = 'chromium-browser'
+                print("Chromium найден и доступен")
+            except Exception as e2:
+                print(f"Chrome/Chromium не найден: {e}, {e2}")
+                return False
+        
         # Команда для запуска Chrome
-        chrome_cmd = ['google-chrome'] + CHROME_OPTIONS + [url]
+        chrome_cmd = [chrome_binary] + CHROME_OPTIONS + [url]
         
         print(f"Запускаем Chrome с командой: {' '.join(chrome_cmd)}")
         
@@ -60,7 +72,7 @@ def start_chrome(url):
                                         stderr=subprocess.PIPE)
         
         # Проверяем, что процесс запустился
-        time.sleep(3)
+        time.sleep(5)  # Увеличиваем время ожидания
         if chrome_process.poll() is None:
             chrome_running = True
             print(f"Chrome успешно запущен с URL: {url}")
