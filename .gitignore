@@ -148,5 +148,4 @@ Thumbs.db
 *.tmp
 *.temp
 
-# Configuration files with sensitive data
-config.py 
+ 

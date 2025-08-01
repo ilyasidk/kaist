@@ -2,8 +2,8 @@
 
 ## Шаг 1: Настройка URL
 
-1. Откройте файл `config.py`
-2. Убедитесь, что указан правильный URL:
+1. Откройте файл `app.py`
+2. Измените URL в переменной `DEFAULT_URL`:
 
 ```python
 DEFAULT_URL = "https://www.kaggle.com/code/ilyasmakhatov/notebook45e3b56ff8/edit"
