@@ -1,0 +1,3717 @@
+{
+  "timestamp": "20250731_232245",
+  "total_time_minutes": 0.366072424252828,
+  "total_combinations": 216,
+  "grid_parameters": {
+    "n_hidden": [
+      10,
+      50,
+      100
+    ],
+    "learning_rate": [
+      0.001,
+      0.005,
+      0.01
+    ],
+    "epochs": [
+      200,
+      500
+    ],
+    "activation_fn": [
+      "sigmoid",
+      "relu",
+      "tanh"
+    ],
+    "noise": [
+      0.5,
+      1.0
+    ],
+    "test_ratio": [
+      0.2,
+      0.3
+    ]
+  },
+  "best_accuracy": 74.44444444444444,
+  "best_params": [
+    10,
+    0.01,
+    200,
+    "sigmoid",
+    0.5,
+    0.3
+  ],
+  "all_results": [
+    {
+      "params": [
+        10,
+        0.01,
+        200,
+        "sigmoid",
+        0.5,
+        0.3
+      ],
+      "accuracy": 74.44444444444444,
+      "n_hidden": 10,
+      "learning_rate": 0.01,
+      "epochs": 200,
+      "activation_fn": "sigmoid",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        10,
+        0.005,
+        500,
+        "sigmoid",
+        0.5,
+        0.3
+      ],
+      "accuracy": 73.33333333333333,
+      "n_hidden": 10,
+      "learning_rate": 0.005,
+      "epochs": 500,
+      "activation_fn": "sigmoid",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        10,
+        0.01,
+        200,
+        "sigmoid",
+        1.0,
+        0.3
+      ],
+      "accuracy": 72.22222222222221,
+      "n_hidden": 10,
+      "learning_rate": 0.01,
+      "epochs": 200,
+      "activation_fn": "sigmoid",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        10,
+        0.005,
+        200,
+        "sigmoid",
+        0.5,
+        0.3
+      ],
+      "accuracy": 71.11111111111111,
+      "n_hidden": 10,
+      "learning_rate": 0.005,
+      "epochs": 200,
+      "activation_fn": "sigmoid",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        10,
+        0.005,
+        200,
+        "sigmoid",
+        1.0,
+        0.3
+      ],
+      "accuracy": 71.11111111111111,
+      "n_hidden": 10,
+      "learning_rate": 0.005,
+      "epochs": 200,
+      "activation_fn": "sigmoid",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        10,
+        0.005,
+        500,
+        "sigmoid",
+        1.0,
+        0.3
+      ],
+      "accuracy": 71.11111111111111,
+      "n_hidden": 10,
+      "learning_rate": 0.005,
+      "epochs": 500,
+      "activation_fn": "sigmoid",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        10,
+        0.01,
+        500,
+        "sigmoid",
+        1.0,
+        0.3
+      ],
+      "accuracy": 71.11111111111111,
+      "n_hidden": 10,
+      "learning_rate": 0.01,
+      "epochs": 500,
+      "activation_fn": "sigmoid",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        50,
+        0.001,
+        500,
+        "sigmoid",
+        1.0,
+        0.3
+      ],
+      "accuracy": 71.11111111111111,
+      "n_hidden": 50,
+      "learning_rate": 0.001,
+      "epochs": 500,
+      "activation_fn": "sigmoid",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        10,
+        0.001,
+        200,
+        "sigmoid",
+        1.0,
+        0.3
+      ],
+      "accuracy": 70.0,
+      "n_hidden": 10,
+      "learning_rate": 0.001,
+      "epochs": 200,
+      "activation_fn": "sigmoid",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        50,
+        0.001,
+        200,
+        "sigmoid",
+        0.5,
+        0.3
+      ],
+      "accuracy": 70.0,
+      "n_hidden": 50,
+      "learning_rate": 0.001,
+      "epochs": 200,
+      "activation_fn": "sigmoid",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        50,
+        0.001,
+        200,
+        "sigmoid",
+        1.0,
+        0.3
+      ],
+      "accuracy": 70.0,
+      "n_hidden": 50,
+      "learning_rate": 0.001,
+      "epochs": 200,
+      "activation_fn": "sigmoid",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        50,
+        0.001,
+        500,
+        "sigmoid",
+        0.5,
+        0.2
+      ],
+      "accuracy": 70.0,
+      "n_hidden": 50,
+      "learning_rate": 0.001,
+      "epochs": 500,
+      "activation_fn": "sigmoid",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        50,
+        0.001,
+        500,
+        "sigmoid",
+        0.5,
+        0.3
+      ],
+      "accuracy": 70.0,
+      "n_hidden": 50,
+      "learning_rate": 0.001,
+      "epochs": 500,
+      "activation_fn": "sigmoid",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        50,
+        0.01,
+        200,
+        "relu",
+        0.5,
+        0.3
+      ],
+      "accuracy": 70.0,
+      "n_hidden": 50,
+      "learning_rate": 0.01,
+      "epochs": 200,
+      "activation_fn": "relu",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        100,
+        0.005,
+        200,
+        "sigmoid",
+        1.0,
+        0.3
+      ],
+      "accuracy": 70.0,
+      "n_hidden": 100,
+      "learning_rate": 0.005,
+      "epochs": 200,
+      "activation_fn": "sigmoid",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        100,
+        0.005,
+        500,
+        "sigmoid",
+        0.5,
+        0.3
+      ],
+      "accuracy": 70.0,
+      "n_hidden": 100,
+      "learning_rate": 0.005,
+      "epochs": 500,
+      "activation_fn": "sigmoid",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        100,
+        0.005,
+        500,
+        "sigmoid",
+        1.0,
+        0.3
+      ],
+      "accuracy": 70.0,
+      "n_hidden": 100,
+      "learning_rate": 0.005,
+      "epochs": 500,
+      "activation_fn": "sigmoid",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        10,
+        0.001,
+        200,
+        "sigmoid",
+        0.5,
+        0.3
+      ],
+      "accuracy": 68.88888888888889,
+      "n_hidden": 10,
+      "learning_rate": 0.001,
+      "epochs": 200,
+      "activation_fn": "sigmoid",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        10,
+        0.001,
+        500,
+        "sigmoid",
+        0.5,
+        0.3
+      ],
+      "accuracy": 68.88888888888889,
+      "n_hidden": 10,
+      "learning_rate": 0.001,
+      "epochs": 500,
+      "activation_fn": "sigmoid",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        10,
+        0.001,
+        500,
+        "sigmoid",
+        1.0,
+        0.3
+      ],
+      "accuracy": 68.88888888888889,
+      "n_hidden": 10,
+      "learning_rate": 0.001,
+      "epochs": 500,
+      "activation_fn": "sigmoid",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        50,
+        0.001,
+        500,
+        "tanh",
+        1.0,
+        0.3
+      ],
+      "accuracy": 68.88888888888889,
+      "n_hidden": 50,
+      "learning_rate": 0.001,
+      "epochs": 500,
+      "activation_fn": "tanh",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        100,
+        0.001,
+        200,
+        "sigmoid",
+        1.0,
+        0.3
+      ],
+      "accuracy": 68.88888888888889,
+      "n_hidden": 100,
+      "learning_rate": 0.001,
+      "epochs": 200,
+      "activation_fn": "sigmoid",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        100,
+        0.001,
+        500,
+        "sigmoid",
+        1.0,
+        0.3
+      ],
+      "accuracy": 68.88888888888889,
+      "n_hidden": 100,
+      "learning_rate": 0.001,
+      "epochs": 500,
+      "activation_fn": "sigmoid",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        100,
+        0.01,
+        500,
+        "sigmoid",
+        1.0,
+        0.3
+      ],
+      "accuracy": 68.88888888888889,
+      "n_hidden": 100,
+      "learning_rate": 0.01,
+      "epochs": 500,
+      "activation_fn": "sigmoid",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        10,
+        0.005,
+        200,
+        "sigmoid",
+        0.5,
+        0.2
+      ],
+      "accuracy": 68.33333333333333,
+      "n_hidden": 10,
+      "learning_rate": 0.005,
+      "epochs": 200,
+      "activation_fn": "sigmoid",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        10,
+        0.005,
+        500,
+        "sigmoid",
+        1.0,
+        0.2
+      ],
+      "accuracy": 68.33333333333333,
+      "n_hidden": 10,
+      "learning_rate": 0.005,
+      "epochs": 500,
+      "activation_fn": "sigmoid",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        100,
+        0.01,
+        500,
+        "tanh",
+        1.0,
+        0.2
+      ],
+      "accuracy": 68.33333333333333,
+      "n_hidden": 100,
+      "learning_rate": 0.01,
+      "epochs": 500,
+      "activation_fn": "tanh",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        10,
+        0.01,
+        200,
+        "relu",
+        0.5,
+        0.3
+      ],
+      "accuracy": 67.77777777777779,
+      "n_hidden": 10,
+      "learning_rate": 0.01,
+      "epochs": 200,
+      "activation_fn": "relu",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        10,
+        0.01,
+        500,
+        "sigmoid",
+        0.5,
+        0.3
+      ],
+      "accuracy": 67.77777777777779,
+      "n_hidden": 10,
+      "learning_rate": 0.01,
+      "epochs": 500,
+      "activation_fn": "sigmoid",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        50,
+        0.001,
+        200,
+        "tanh",
+        0.5,
+        0.3
+      ],
+      "accuracy": 67.77777777777779,
+      "n_hidden": 50,
+      "learning_rate": 0.001,
+      "epochs": 200,
+      "activation_fn": "tanh",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        50,
+        0.005,
+        500,
+        "sigmoid",
+        0.5,
+        0.3
+      ],
+      "accuracy": 67.77777777777779,
+      "n_hidden": 50,
+      "learning_rate": 0.005,
+      "epochs": 500,
+      "activation_fn": "sigmoid",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        100,
+        0.001,
+        200,
+        "sigmoid",
+        0.5,
+        0.3
+      ],
+      "accuracy": 67.77777777777779,
+      "n_hidden": 100,
+      "learning_rate": 0.001,
+      "epochs": 200,
+      "activation_fn": "sigmoid",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        100,
+        0.001,
+        200,
+        "tanh",
+        1.0,
+        0.3
+      ],
+      "accuracy": 67.77777777777779,
+      "n_hidden": 100,
+      "learning_rate": 0.001,
+      "epochs": 200,
+      "activation_fn": "tanh",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        100,
+        0.001,
+        500,
+        "sigmoid",
+        0.5,
+        0.3
+      ],
+      "accuracy": 67.77777777777779,
+      "n_hidden": 100,
+      "learning_rate": 0.001,
+      "epochs": 500,
+      "activation_fn": "sigmoid",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        100,
+        0.005,
+        200,
+        "sigmoid",
+        0.5,
+        0.3
+      ],
+      "accuracy": 67.77777777777779,
+      "n_hidden": 100,
+      "learning_rate": 0.005,
+      "epochs": 200,
+      "activation_fn": "sigmoid",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        100,
+        0.01,
+        500,
+        "sigmoid",
+        0.5,
+        0.3
+      ],
+      "accuracy": 67.77777777777779,
+      "n_hidden": 100,
+      "learning_rate": 0.01,
+      "epochs": 500,
+      "activation_fn": "sigmoid",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        10,
+        0.001,
+        200,
+        "sigmoid",
+        0.5,
+        0.2
+      ],
+      "accuracy": 66.66666666666666,
+      "n_hidden": 10,
+      "learning_rate": 0.001,
+      "epochs": 200,
+      "activation_fn": "sigmoid",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        10,
+        0.001,
+        200,
+        "sigmoid",
+        1.0,
+        0.2
+      ],
+      "accuracy": 66.66666666666666,
+      "n_hidden": 10,
+      "learning_rate": 0.001,
+      "epochs": 200,
+      "activation_fn": "sigmoid",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        10,
+        0.001,
+        200,
+        "tanh",
+        0.5,
+        0.3
+      ],
+      "accuracy": 66.66666666666666,
+      "n_hidden": 10,
+      "learning_rate": 0.001,
+      "epochs": 200,
+      "activation_fn": "tanh",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        10,
+        0.001,
+        500,
+        "tanh",
+        1.0,
+        0.3
+      ],
+      "accuracy": 66.66666666666666,
+      "n_hidden": 10,
+      "learning_rate": 0.001,
+      "epochs": 500,
+      "activation_fn": "tanh",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        10,
+        0.005,
+        500,
+        "sigmoid",
+        0.5,
+        0.2
+      ],
+      "accuracy": 66.66666666666666,
+      "n_hidden": 10,
+      "learning_rate": 0.005,
+      "epochs": 500,
+      "activation_fn": "sigmoid",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        10,
+        0.005,
+        500,
+        "relu",
+        0.5,
+        0.3
+      ],
+      "accuracy": 66.66666666666666,
+      "n_hidden": 10,
+      "learning_rate": 0.005,
+      "epochs": 500,
+      "activation_fn": "relu",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        50,
+        0.001,
+        200,
+        "sigmoid",
+        0.5,
+        0.2
+      ],
+      "accuracy": 66.66666666666666,
+      "n_hidden": 50,
+      "learning_rate": 0.001,
+      "epochs": 200,
+      "activation_fn": "sigmoid",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        50,
+        0.001,
+        500,
+        "sigmoid",
+        1.0,
+        0.2
+      ],
+      "accuracy": 66.66666666666666,
+      "n_hidden": 50,
+      "learning_rate": 0.001,
+      "epochs": 500,
+      "activation_fn": "sigmoid",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        50,
+        0.005,
+        200,
+        "sigmoid",
+        0.5,
+        0.3
+      ],
+      "accuracy": 66.66666666666666,
+      "n_hidden": 50,
+      "learning_rate": 0.005,
+      "epochs": 200,
+      "activation_fn": "sigmoid",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        50,
+        0.005,
+        200,
+        "sigmoid",
+        1.0,
+        0.3
+      ],
+      "accuracy": 66.66666666666666,
+      "n_hidden": 50,
+      "learning_rate": 0.005,
+      "epochs": 200,
+      "activation_fn": "sigmoid",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        50,
+        0.005,
+        500,
+        "sigmoid",
+        1.0,
+        0.3
+      ],
+      "accuracy": 66.66666666666666,
+      "n_hidden": 50,
+      "learning_rate": 0.005,
+      "epochs": 500,
+      "activation_fn": "sigmoid",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        100,
+        0.005,
+        200,
+        "relu",
+        0.5,
+        0.3
+      ],
+      "accuracy": 66.66666666666666,
+      "n_hidden": 100,
+      "learning_rate": 0.005,
+      "epochs": 200,
+      "activation_fn": "relu",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        100,
+        0.01,
+        200,
+        "sigmoid",
+        0.5,
+        0.3
+      ],
+      "accuracy": 66.66666666666666,
+      "n_hidden": 100,
+      "learning_rate": 0.01,
+      "epochs": 200,
+      "activation_fn": "sigmoid",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        10,
+        0.001,
+        200,
+        "tanh",
+        1.0,
+        0.3
+      ],
+      "accuracy": 65.55555555555556,
+      "n_hidden": 10,
+      "learning_rate": 0.001,
+      "epochs": 200,
+      "activation_fn": "tanh",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        10,
+        0.001,
+        500,
+        "tanh",
+        0.5,
+        0.3
+      ],
+      "accuracy": 65.55555555555556,
+      "n_hidden": 10,
+      "learning_rate": 0.001,
+      "epochs": 500,
+      "activation_fn": "tanh",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        10,
+        0.01,
+        500,
+        "tanh",
+        0.5,
+        0.3
+      ],
+      "accuracy": 65.55555555555556,
+      "n_hidden": 10,
+      "learning_rate": 0.01,
+      "epochs": 500,
+      "activation_fn": "tanh",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        50,
+        0.001,
+        200,
+        "tanh",
+        1.0,
+        0.3
+      ],
+      "accuracy": 65.55555555555556,
+      "n_hidden": 50,
+      "learning_rate": 0.001,
+      "epochs": 200,
+      "activation_fn": "tanh",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        50,
+        0.01,
+        200,
+        "relu",
+        1.0,
+        0.3
+      ],
+      "accuracy": 65.55555555555556,
+      "n_hidden": 50,
+      "learning_rate": 0.01,
+      "epochs": 200,
+      "activation_fn": "relu",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        50,
+        0.01,
+        200,
+        "tanh",
+        0.5,
+        0.3
+      ],
+      "accuracy": 65.55555555555556,
+      "n_hidden": 50,
+      "learning_rate": 0.01,
+      "epochs": 200,
+      "activation_fn": "tanh",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        100,
+        0.001,
+        200,
+        "tanh",
+        0.5,
+        0.3
+      ],
+      "accuracy": 65.55555555555556,
+      "n_hidden": 100,
+      "learning_rate": 0.001,
+      "epochs": 200,
+      "activation_fn": "tanh",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        100,
+        0.005,
+        200,
+        "relu",
+        1.0,
+        0.3
+      ],
+      "accuracy": 65.55555555555556,
+      "n_hidden": 100,
+      "learning_rate": 0.005,
+      "epochs": 200,
+      "activation_fn": "relu",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        100,
+        0.01,
+        200,
+        "relu",
+        0.5,
+        0.3
+      ],
+      "accuracy": 65.55555555555556,
+      "n_hidden": 100,
+      "learning_rate": 0.01,
+      "epochs": 200,
+      "activation_fn": "relu",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        100,
+        0.01,
+        200,
+        "relu",
+        1.0,
+        0.3
+      ],
+      "accuracy": 65.55555555555556,
+      "n_hidden": 100,
+      "learning_rate": 0.01,
+      "epochs": 200,
+      "activation_fn": "relu",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        10,
+        0.001,
+        200,
+        "tanh",
+        0.5,
+        0.2
+      ],
+      "accuracy": 65.0,
+      "n_hidden": 10,
+      "learning_rate": 0.001,
+      "epochs": 200,
+      "activation_fn": "tanh",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        10,
+        0.001,
+        500,
+        "sigmoid",
+        0.5,
+        0.2
+      ],
+      "accuracy": 65.0,
+      "n_hidden": 10,
+      "learning_rate": 0.001,
+      "epochs": 500,
+      "activation_fn": "sigmoid",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        10,
+        0.005,
+        200,
+        "sigmoid",
+        1.0,
+        0.2
+      ],
+      "accuracy": 65.0,
+      "n_hidden": 10,
+      "learning_rate": 0.005,
+      "epochs": 200,
+      "activation_fn": "sigmoid",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        10,
+        0.01,
+        200,
+        "sigmoid",
+        0.5,
+        0.2
+      ],
+      "accuracy": 65.0,
+      "n_hidden": 10,
+      "learning_rate": 0.01,
+      "epochs": 200,
+      "activation_fn": "sigmoid",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        10,
+        0.01,
+        200,
+        "sigmoid",
+        1.0,
+        0.2
+      ],
+      "accuracy": 65.0,
+      "n_hidden": 10,
+      "learning_rate": 0.01,
+      "epochs": 200,
+      "activation_fn": "sigmoid",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        50,
+        0.001,
+        200,
+        "sigmoid",
+        1.0,
+        0.2
+      ],
+      "accuracy": 65.0,
+      "n_hidden": 50,
+      "learning_rate": 0.001,
+      "epochs": 200,
+      "activation_fn": "sigmoid",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        50,
+        0.001,
+        200,
+        "tanh",
+        0.5,
+        0.2
+      ],
+      "accuracy": 65.0,
+      "n_hidden": 50,
+      "learning_rate": 0.001,
+      "epochs": 200,
+      "activation_fn": "tanh",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        100,
+        0.001,
+        200,
+        "tanh",
+        0.5,
+        0.2
+      ],
+      "accuracy": 65.0,
+      "n_hidden": 100,
+      "learning_rate": 0.001,
+      "epochs": 200,
+      "activation_fn": "tanh",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        100,
+        0.001,
+        500,
+        "tanh",
+        0.5,
+        0.2
+      ],
+      "accuracy": 65.0,
+      "n_hidden": 100,
+      "learning_rate": 0.001,
+      "epochs": 500,
+      "activation_fn": "tanh",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        100,
+        0.005,
+        200,
+        "sigmoid",
+        0.5,
+        0.2
+      ],
+      "accuracy": 65.0,
+      "n_hidden": 100,
+      "learning_rate": 0.005,
+      "epochs": 200,
+      "activation_fn": "sigmoid",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        100,
+        0.005,
+        500,
+        "sigmoid",
+        1.0,
+        0.2
+      ],
+      "accuracy": 65.0,
+      "n_hidden": 100,
+      "learning_rate": 0.005,
+      "epochs": 500,
+      "activation_fn": "sigmoid",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        10,
+        0.005,
+        200,
+        "relu",
+        0.5,
+        0.3
+      ],
+      "accuracy": 64.44444444444444,
+      "n_hidden": 10,
+      "learning_rate": 0.005,
+      "epochs": 200,
+      "activation_fn": "relu",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        10,
+        0.005,
+        200,
+        "tanh",
+        1.0,
+        0.3
+      ],
+      "accuracy": 64.44444444444444,
+      "n_hidden": 10,
+      "learning_rate": 0.005,
+      "epochs": 200,
+      "activation_fn": "tanh",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        10,
+        0.005,
+        500,
+        "tanh",
+        0.5,
+        0.3
+      ],
+      "accuracy": 64.44444444444444,
+      "n_hidden": 10,
+      "learning_rate": 0.005,
+      "epochs": 500,
+      "activation_fn": "tanh",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        10,
+        0.01,
+        500,
+        "relu",
+        0.5,
+        0.3
+      ],
+      "accuracy": 64.44444444444444,
+      "n_hidden": 10,
+      "learning_rate": 0.01,
+      "epochs": 500,
+      "activation_fn": "relu",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        50,
+        0.001,
+        200,
+        "relu",
+        1.0,
+        0.3
+      ],
+      "accuracy": 64.44444444444444,
+      "n_hidden": 50,
+      "learning_rate": 0.001,
+      "epochs": 200,
+      "activation_fn": "relu",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        50,
+        0.01,
+        500,
+        "relu",
+        1.0,
+        0.3
+      ],
+      "accuracy": 64.44444444444444,
+      "n_hidden": 50,
+      "learning_rate": 0.01,
+      "epochs": 500,
+      "activation_fn": "relu",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        50,
+        0.01,
+        500,
+        "tanh",
+        0.5,
+        0.3
+      ],
+      "accuracy": 64.44444444444444,
+      "n_hidden": 50,
+      "learning_rate": 0.01,
+      "epochs": 500,
+      "activation_fn": "tanh",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        100,
+        0.001,
+        200,
+        "relu",
+        0.5,
+        0.3
+      ],
+      "accuracy": 64.44444444444444,
+      "n_hidden": 100,
+      "learning_rate": 0.001,
+      "epochs": 200,
+      "activation_fn": "relu",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        100,
+        0.001,
+        500,
+        "relu",
+        0.5,
+        0.3
+      ],
+      "accuracy": 64.44444444444444,
+      "n_hidden": 100,
+      "learning_rate": 0.001,
+      "epochs": 500,
+      "activation_fn": "relu",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        100,
+        0.005,
+        500,
+        "relu",
+        1.0,
+        0.3
+      ],
+      "accuracy": 64.44444444444444,
+      "n_hidden": 100,
+      "learning_rate": 0.005,
+      "epochs": 500,
+      "activation_fn": "relu",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        10,
+        0.001,
+        200,
+        "tanh",
+        1.0,
+        0.2
+      ],
+      "accuracy": 63.33333333333333,
+      "n_hidden": 10,
+      "learning_rate": 0.001,
+      "epochs": 200,
+      "activation_fn": "tanh",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        10,
+        0.001,
+        500,
+        "sigmoid",
+        1.0,
+        0.2
+      ],
+      "accuracy": 63.33333333333333,
+      "n_hidden": 10,
+      "learning_rate": 0.001,
+      "epochs": 500,
+      "activation_fn": "sigmoid",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        10,
+        0.001,
+        500,
+        "relu",
+        0.5,
+        0.2
+      ],
+      "accuracy": 63.33333333333333,
+      "n_hidden": 10,
+      "learning_rate": 0.001,
+      "epochs": 500,
+      "activation_fn": "relu",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        10,
+        0.001,
+        500,
+        "relu",
+        0.5,
+        0.3
+      ],
+      "accuracy": 63.33333333333333,
+      "n_hidden": 10,
+      "learning_rate": 0.001,
+      "epochs": 500,
+      "activation_fn": "relu",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        10,
+        0.001,
+        500,
+        "relu",
+        1.0,
+        0.2
+      ],
+      "accuracy": 63.33333333333333,
+      "n_hidden": 10,
+      "learning_rate": 0.001,
+      "epochs": 500,
+      "activation_fn": "relu",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        10,
+        0.005,
+        200,
+        "relu",
+        1.0,
+        0.3
+      ],
+      "accuracy": 63.33333333333333,
+      "n_hidden": 10,
+      "learning_rate": 0.005,
+      "epochs": 200,
+      "activation_fn": "relu",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        10,
+        0.01,
+        200,
+        "relu",
+        0.5,
+        0.2
+      ],
+      "accuracy": 63.33333333333333,
+      "n_hidden": 10,
+      "learning_rate": 0.01,
+      "epochs": 200,
+      "activation_fn": "relu",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        10,
+        0.01,
+        500,
+        "tanh",
+        0.5,
+        0.2
+      ],
+      "accuracy": 63.33333333333333,
+      "n_hidden": 10,
+      "learning_rate": 0.01,
+      "epochs": 500,
+      "activation_fn": "tanh",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        50,
+        0.001,
+        200,
+        "relu",
+        0.5,
+        0.3
+      ],
+      "accuracy": 63.33333333333333,
+      "n_hidden": 50,
+      "learning_rate": 0.001,
+      "epochs": 200,
+      "activation_fn": "relu",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        50,
+        0.001,
+        200,
+        "tanh",
+        1.0,
+        0.2
+      ],
+      "accuracy": 63.33333333333333,
+      "n_hidden": 50,
+      "learning_rate": 0.001,
+      "epochs": 200,
+      "activation_fn": "tanh",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        50,
+        0.001,
+        500,
+        "relu",
+        0.5,
+        0.2
+      ],
+      "accuracy": 63.33333333333333,
+      "n_hidden": 50,
+      "learning_rate": 0.001,
+      "epochs": 500,
+      "activation_fn": "relu",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        50,
+        0.001,
+        500,
+        "relu",
+        0.5,
+        0.3
+      ],
+      "accuracy": 63.33333333333333,
+      "n_hidden": 50,
+      "learning_rate": 0.001,
+      "epochs": 500,
+      "activation_fn": "relu",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        50,
+        0.001,
+        500,
+        "relu",
+        1.0,
+        0.2
+      ],
+      "accuracy": 63.33333333333333,
+      "n_hidden": 50,
+      "learning_rate": 0.001,
+      "epochs": 500,
+      "activation_fn": "relu",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        50,
+        0.001,
+        500,
+        "relu",
+        1.0,
+        0.3
+      ],
+      "accuracy": 63.33333333333333,
+      "n_hidden": 50,
+      "learning_rate": 0.001,
+      "epochs": 500,
+      "activation_fn": "relu",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        50,
+        0.005,
+        200,
+        "sigmoid",
+        0.5,
+        0.2
+      ],
+      "accuracy": 63.33333333333333,
+      "n_hidden": 50,
+      "learning_rate": 0.005,
+      "epochs": 200,
+      "activation_fn": "sigmoid",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        50,
+        0.005,
+        200,
+        "sigmoid",
+        1.0,
+        0.2
+      ],
+      "accuracy": 63.33333333333333,
+      "n_hidden": 50,
+      "learning_rate": 0.005,
+      "epochs": 200,
+      "activation_fn": "sigmoid",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        50,
+        0.005,
+        200,
+        "relu",
+        0.5,
+        0.3
+      ],
+      "accuracy": 63.33333333333333,
+      "n_hidden": 50,
+      "learning_rate": 0.005,
+      "epochs": 200,
+      "activation_fn": "relu",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        50,
+        0.005,
+        200,
+        "relu",
+        1.0,
+        0.3
+      ],
+      "accuracy": 63.33333333333333,
+      "n_hidden": 50,
+      "learning_rate": 0.005,
+      "epochs": 200,
+      "activation_fn": "relu",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        50,
+        0.005,
+        200,
+        "tanh",
+        0.5,
+        0.3
+      ],
+      "accuracy": 63.33333333333333,
+      "n_hidden": 50,
+      "learning_rate": 0.005,
+      "epochs": 200,
+      "activation_fn": "tanh",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        50,
+        0.01,
+        200,
+        "sigmoid",
+        0.5,
+        0.2
+      ],
+      "accuracy": 63.33333333333333,
+      "n_hidden": 50,
+      "learning_rate": 0.01,
+      "epochs": 200,
+      "activation_fn": "sigmoid",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        50,
+        0.01,
+        500,
+        "relu",
+        1.0,
+        0.2
+      ],
+      "accuracy": 63.33333333333333,
+      "n_hidden": 50,
+      "learning_rate": 0.01,
+      "epochs": 500,
+      "activation_fn": "relu",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        100,
+        0.001,
+        200,
+        "sigmoid",
+        1.0,
+        0.2
+      ],
+      "accuracy": 63.33333333333333,
+      "n_hidden": 100,
+      "learning_rate": 0.001,
+      "epochs": 200,
+      "activation_fn": "sigmoid",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        100,
+        0.001,
+        200,
+        "tanh",
+        1.0,
+        0.2
+      ],
+      "accuracy": 63.33333333333333,
+      "n_hidden": 100,
+      "learning_rate": 0.001,
+      "epochs": 200,
+      "activation_fn": "tanh",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        100,
+        0.001,
+        500,
+        "sigmoid",
+        0.5,
+        0.2
+      ],
+      "accuracy": 63.33333333333333,
+      "n_hidden": 100,
+      "learning_rate": 0.001,
+      "epochs": 500,
+      "activation_fn": "sigmoid",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        100,
+        0.001,
+        500,
+        "tanh",
+        0.5,
+        0.3
+      ],
+      "accuracy": 63.33333333333333,
+      "n_hidden": 100,
+      "learning_rate": 0.001,
+      "epochs": 500,
+      "activation_fn": "tanh",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        100,
+        0.005,
+        200,
+        "sigmoid",
+        1.0,
+        0.2
+      ],
+      "accuracy": 63.33333333333333,
+      "n_hidden": 100,
+      "learning_rate": 0.005,
+      "epochs": 200,
+      "activation_fn": "sigmoid",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        100,
+        0.005,
+        200,
+        "tanh",
+        0.5,
+        0.3
+      ],
+      "accuracy": 63.33333333333333,
+      "n_hidden": 100,
+      "learning_rate": 0.005,
+      "epochs": 200,
+      "activation_fn": "tanh",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        100,
+        0.005,
+        500,
+        "sigmoid",
+        0.5,
+        0.2
+      ],
+      "accuracy": 63.33333333333333,
+      "n_hidden": 100,
+      "learning_rate": 0.005,
+      "epochs": 500,
+      "activation_fn": "sigmoid",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        100,
+        0.005,
+        500,
+        "relu",
+        0.5,
+        0.3
+      ],
+      "accuracy": 63.33333333333333,
+      "n_hidden": 100,
+      "learning_rate": 0.005,
+      "epochs": 500,
+      "activation_fn": "relu",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        100,
+        0.005,
+        500,
+        "tanh",
+        0.5,
+        0.2
+      ],
+      "accuracy": 63.33333333333333,
+      "n_hidden": 100,
+      "learning_rate": 0.005,
+      "epochs": 500,
+      "activation_fn": "tanh",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        100,
+        0.005,
+        500,
+        "tanh",
+        0.5,
+        0.3
+      ],
+      "accuracy": 63.33333333333333,
+      "n_hidden": 100,
+      "learning_rate": 0.005,
+      "epochs": 500,
+      "activation_fn": "tanh",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        100,
+        0.005,
+        500,
+        "tanh",
+        1.0,
+        0.2
+      ],
+      "accuracy": 63.33333333333333,
+      "n_hidden": 100,
+      "learning_rate": 0.005,
+      "epochs": 500,
+      "activation_fn": "tanh",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        100,
+        0.005,
+        500,
+        "tanh",
+        1.0,
+        0.3
+      ],
+      "accuracy": 63.33333333333333,
+      "n_hidden": 100,
+      "learning_rate": 0.005,
+      "epochs": 500,
+      "activation_fn": "tanh",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        100,
+        0.01,
+        200,
+        "tanh",
+        1.0,
+        0.2
+      ],
+      "accuracy": 63.33333333333333,
+      "n_hidden": 100,
+      "learning_rate": 0.01,
+      "epochs": 200,
+      "activation_fn": "tanh",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        100,
+        0.01,
+        500,
+        "sigmoid",
+        0.5,
+        0.2
+      ],
+      "accuracy": 63.33333333333333,
+      "n_hidden": 100,
+      "learning_rate": 0.01,
+      "epochs": 500,
+      "activation_fn": "sigmoid",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        100,
+        0.01,
+        500,
+        "relu",
+        0.5,
+        0.3
+      ],
+      "accuracy": 63.33333333333333,
+      "n_hidden": 100,
+      "learning_rate": 0.01,
+      "epochs": 500,
+      "activation_fn": "relu",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        10,
+        0.001,
+        200,
+        "relu",
+        0.5,
+        0.3
+      ],
+      "accuracy": 62.22222222222222,
+      "n_hidden": 10,
+      "learning_rate": 0.001,
+      "epochs": 200,
+      "activation_fn": "relu",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        10,
+        0.001,
+        200,
+        "relu",
+        1.0,
+        0.3
+      ],
+      "accuracy": 62.22222222222222,
+      "n_hidden": 10,
+      "learning_rate": 0.001,
+      "epochs": 200,
+      "activation_fn": "relu",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        10,
+        0.001,
+        500,
+        "relu",
+        1.0,
+        0.3
+      ],
+      "accuracy": 62.22222222222222,
+      "n_hidden": 10,
+      "learning_rate": 0.001,
+      "epochs": 500,
+      "activation_fn": "relu",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        10,
+        0.005,
+        500,
+        "relu",
+        1.0,
+        0.3
+      ],
+      "accuracy": 62.22222222222222,
+      "n_hidden": 10,
+      "learning_rate": 0.005,
+      "epochs": 500,
+      "activation_fn": "relu",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        10,
+        0.005,
+        500,
+        "tanh",
+        1.0,
+        0.3
+      ],
+      "accuracy": 62.22222222222222,
+      "n_hidden": 10,
+      "learning_rate": 0.005,
+      "epochs": 500,
+      "activation_fn": "tanh",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        10,
+        0.01,
+        200,
+        "relu",
+        1.0,
+        0.3
+      ],
+      "accuracy": 62.22222222222222,
+      "n_hidden": 10,
+      "learning_rate": 0.01,
+      "epochs": 200,
+      "activation_fn": "relu",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        10,
+        0.01,
+        500,
+        "relu",
+        1.0,
+        0.3
+      ],
+      "accuracy": 62.22222222222222,
+      "n_hidden": 10,
+      "learning_rate": 0.01,
+      "epochs": 500,
+      "activation_fn": "relu",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        50,
+        0.001,
+        500,
+        "tanh",
+        0.5,
+        0.3
+      ],
+      "accuracy": 62.22222222222222,
+      "n_hidden": 50,
+      "learning_rate": 0.001,
+      "epochs": 500,
+      "activation_fn": "tanh",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        50,
+        0.005,
+        500,
+        "relu",
+        0.5,
+        0.3
+      ],
+      "accuracy": 62.22222222222222,
+      "n_hidden": 50,
+      "learning_rate": 0.005,
+      "epochs": 500,
+      "activation_fn": "relu",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        50,
+        0.01,
+        200,
+        "sigmoid",
+        0.5,
+        0.3
+      ],
+      "accuracy": 62.22222222222222,
+      "n_hidden": 50,
+      "learning_rate": 0.01,
+      "epochs": 200,
+      "activation_fn": "sigmoid",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        50,
+        0.01,
+        500,
+        "tanh",
+        1.0,
+        0.3
+      ],
+      "accuracy": 62.22222222222222,
+      "n_hidden": 50,
+      "learning_rate": 0.01,
+      "epochs": 500,
+      "activation_fn": "tanh",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        100,
+        0.001,
+        200,
+        "relu",
+        1.0,
+        0.3
+      ],
+      "accuracy": 62.22222222222222,
+      "n_hidden": 100,
+      "learning_rate": 0.001,
+      "epochs": 200,
+      "activation_fn": "relu",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        100,
+        0.001,
+        500,
+        "tanh",
+        1.0,
+        0.3
+      ],
+      "accuracy": 62.22222222222222,
+      "n_hidden": 100,
+      "learning_rate": 0.001,
+      "epochs": 500,
+      "activation_fn": "tanh",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        100,
+        0.005,
+        200,
+        "tanh",
+        1.0,
+        0.3
+      ],
+      "accuracy": 62.22222222222222,
+      "n_hidden": 100,
+      "learning_rate": 0.005,
+      "epochs": 200,
+      "activation_fn": "tanh",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        10,
+        0.001,
+        200,
+        "relu",
+        1.0,
+        0.2
+      ],
+      "accuracy": 61.66666666666667,
+      "n_hidden": 10,
+      "learning_rate": 0.001,
+      "epochs": 200,
+      "activation_fn": "relu",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        10,
+        0.001,
+        500,
+        "tanh",
+        0.5,
+        0.2
+      ],
+      "accuracy": 61.66666666666667,
+      "n_hidden": 10,
+      "learning_rate": 0.001,
+      "epochs": 500,
+      "activation_fn": "tanh",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        10,
+        0.005,
+        200,
+        "tanh",
+        1.0,
+        0.2
+      ],
+      "accuracy": 61.66666666666667,
+      "n_hidden": 10,
+      "learning_rate": 0.005,
+      "epochs": 200,
+      "activation_fn": "tanh",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        10,
+        0.005,
+        500,
+        "relu",
+        0.5,
+        0.2
+      ],
+      "accuracy": 61.66666666666667,
+      "n_hidden": 10,
+      "learning_rate": 0.005,
+      "epochs": 500,
+      "activation_fn": "relu",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        10,
+        0.01,
+        500,
+        "relu",
+        0.5,
+        0.2
+      ],
+      "accuracy": 61.66666666666667,
+      "n_hidden": 10,
+      "learning_rate": 0.01,
+      "epochs": 500,
+      "activation_fn": "relu",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        10,
+        0.01,
+        500,
+        "tanh",
+        1.0,
+        0.2
+      ],
+      "accuracy": 61.66666666666667,
+      "n_hidden": 10,
+      "learning_rate": 0.01,
+      "epochs": 500,
+      "activation_fn": "tanh",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        50,
+        0.001,
+        200,
+        "relu",
+        1.0,
+        0.2
+      ],
+      "accuracy": 61.66666666666667,
+      "n_hidden": 50,
+      "learning_rate": 0.001,
+      "epochs": 200,
+      "activation_fn": "relu",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        50,
+        0.001,
+        500,
+        "tanh",
+        1.0,
+        0.2
+      ],
+      "accuracy": 61.66666666666667,
+      "n_hidden": 50,
+      "learning_rate": 0.001,
+      "epochs": 500,
+      "activation_fn": "tanh",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        50,
+        0.005,
+        200,
+        "relu",
+        0.5,
+        0.2
+      ],
+      "accuracy": 61.66666666666667,
+      "n_hidden": 50,
+      "learning_rate": 0.005,
+      "epochs": 200,
+      "activation_fn": "relu",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        50,
+        0.005,
+        500,
+        "sigmoid",
+        0.5,
+        0.2
+      ],
+      "accuracy": 61.66666666666667,
+      "n_hidden": 50,
+      "learning_rate": 0.005,
+      "epochs": 500,
+      "activation_fn": "sigmoid",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        50,
+        0.005,
+        500,
+        "sigmoid",
+        1.0,
+        0.2
+      ],
+      "accuracy": 61.66666666666667,
+      "n_hidden": 50,
+      "learning_rate": 0.005,
+      "epochs": 500,
+      "activation_fn": "sigmoid",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        50,
+        0.01,
+        200,
+        "relu",
+        1.0,
+        0.2
+      ],
+      "accuracy": 61.66666666666667,
+      "n_hidden": 50,
+      "learning_rate": 0.01,
+      "epochs": 200,
+      "activation_fn": "relu",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        50,
+        0.01,
+        200,
+        "tanh",
+        0.5,
+        0.2
+      ],
+      "accuracy": 61.66666666666667,
+      "n_hidden": 50,
+      "learning_rate": 0.01,
+      "epochs": 200,
+      "activation_fn": "tanh",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        100,
+        0.001,
+        200,
+        "sigmoid",
+        0.5,
+        0.2
+      ],
+      "accuracy": 61.66666666666667,
+      "n_hidden": 100,
+      "learning_rate": 0.001,
+      "epochs": 200,
+      "activation_fn": "sigmoid",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        100,
+        0.001,
+        500,
+        "sigmoid",
+        1.0,
+        0.2
+      ],
+      "accuracy": 61.66666666666667,
+      "n_hidden": 100,
+      "learning_rate": 0.001,
+      "epochs": 500,
+      "activation_fn": "sigmoid",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        100,
+        0.001,
+        500,
+        "tanh",
+        1.0,
+        0.2
+      ],
+      "accuracy": 61.66666666666667,
+      "n_hidden": 100,
+      "learning_rate": 0.001,
+      "epochs": 500,
+      "activation_fn": "tanh",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        100,
+        0.01,
+        200,
+        "relu",
+        0.5,
+        0.2
+      ],
+      "accuracy": 61.66666666666667,
+      "n_hidden": 100,
+      "learning_rate": 0.01,
+      "epochs": 200,
+      "activation_fn": "relu",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        100,
+        0.01,
+        500,
+        "relu",
+        1.0,
+        0.2
+      ],
+      "accuracy": 61.66666666666667,
+      "n_hidden": 100,
+      "learning_rate": 0.01,
+      "epochs": 500,
+      "activation_fn": "relu",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        10,
+        0.01,
+        200,
+        "tanh",
+        0.5,
+        0.3
+      ],
+      "accuracy": 61.111111111111114,
+      "n_hidden": 10,
+      "learning_rate": 0.01,
+      "epochs": 200,
+      "activation_fn": "tanh",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        50,
+        0.005,
+        200,
+        "tanh",
+        1.0,
+        0.3
+      ],
+      "accuracy": 61.111111111111114,
+      "n_hidden": 50,
+      "learning_rate": 0.005,
+      "epochs": 200,
+      "activation_fn": "tanh",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        50,
+        0.01,
+        200,
+        "sigmoid",
+        1.0,
+        0.3
+      ],
+      "accuracy": 61.111111111111114,
+      "n_hidden": 50,
+      "learning_rate": 0.01,
+      "epochs": 200,
+      "activation_fn": "sigmoid",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        50,
+        0.01,
+        500,
+        "sigmoid",
+        0.5,
+        0.3
+      ],
+      "accuracy": 61.111111111111114,
+      "n_hidden": 50,
+      "learning_rate": 0.01,
+      "epochs": 500,
+      "activation_fn": "sigmoid",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        100,
+        0.001,
+        500,
+        "relu",
+        1.0,
+        0.3
+      ],
+      "accuracy": 61.111111111111114,
+      "n_hidden": 100,
+      "learning_rate": 0.001,
+      "epochs": 500,
+      "activation_fn": "relu",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        100,
+        0.01,
+        200,
+        "sigmoid",
+        1.0,
+        0.3
+      ],
+      "accuracy": 61.111111111111114,
+      "n_hidden": 100,
+      "learning_rate": 0.01,
+      "epochs": 200,
+      "activation_fn": "sigmoid",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        100,
+        0.01,
+        500,
+        "relu",
+        1.0,
+        0.3
+      ],
+      "accuracy": 61.111111111111114,
+      "n_hidden": 100,
+      "learning_rate": 0.01,
+      "epochs": 500,
+      "activation_fn": "relu",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        100,
+        0.01,
+        500,
+        "tanh",
+        1.0,
+        0.3
+      ],
+      "accuracy": 61.111111111111114,
+      "n_hidden": 100,
+      "learning_rate": 0.01,
+      "epochs": 500,
+      "activation_fn": "tanh",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        10,
+        0.001,
+        200,
+        "relu",
+        0.5,
+        0.2
+      ],
+      "accuracy": 60.0,
+      "n_hidden": 10,
+      "learning_rate": 0.001,
+      "epochs": 200,
+      "activation_fn": "relu",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        10,
+        0.001,
+        500,
+        "tanh",
+        1.0,
+        0.2
+      ],
+      "accuracy": 60.0,
+      "n_hidden": 10,
+      "learning_rate": 0.001,
+      "epochs": 500,
+      "activation_fn": "tanh",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        10,
+        0.005,
+        200,
+        "relu",
+        0.5,
+        0.2
+      ],
+      "accuracy": 60.0,
+      "n_hidden": 10,
+      "learning_rate": 0.005,
+      "epochs": 200,
+      "activation_fn": "relu",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        10,
+        0.005,
+        200,
+        "relu",
+        1.0,
+        0.2
+      ],
+      "accuracy": 60.0,
+      "n_hidden": 10,
+      "learning_rate": 0.005,
+      "epochs": 200,
+      "activation_fn": "relu",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        10,
+        0.005,
+        200,
+        "tanh",
+        0.5,
+        0.3
+      ],
+      "accuracy": 60.0,
+      "n_hidden": 10,
+      "learning_rate": 0.005,
+      "epochs": 200,
+      "activation_fn": "tanh",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        10,
+        0.005,
+        500,
+        "tanh",
+        1.0,
+        0.2
+      ],
+      "accuracy": 60.0,
+      "n_hidden": 10,
+      "learning_rate": 0.005,
+      "epochs": 500,
+      "activation_fn": "tanh",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        10,
+        0.01,
+        200,
+        "tanh",
+        0.5,
+        0.2
+      ],
+      "accuracy": 60.0,
+      "n_hidden": 10,
+      "learning_rate": 0.01,
+      "epochs": 200,
+      "activation_fn": "tanh",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        10,
+        0.01,
+        500,
+        "sigmoid",
+        0.5,
+        0.2
+      ],
+      "accuracy": 60.0,
+      "n_hidden": 10,
+      "learning_rate": 0.01,
+      "epochs": 500,
+      "activation_fn": "sigmoid",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        10,
+        0.01,
+        500,
+        "relu",
+        1.0,
+        0.2
+      ],
+      "accuracy": 60.0,
+      "n_hidden": 10,
+      "learning_rate": 0.01,
+      "epochs": 500,
+      "activation_fn": "relu",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        50,
+        0.001,
+        200,
+        "relu",
+        0.5,
+        0.2
+      ],
+      "accuracy": 60.0,
+      "n_hidden": 50,
+      "learning_rate": 0.001,
+      "epochs": 200,
+      "activation_fn": "relu",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        50,
+        0.001,
+        500,
+        "tanh",
+        0.5,
+        0.2
+      ],
+      "accuracy": 60.0,
+      "n_hidden": 50,
+      "learning_rate": 0.001,
+      "epochs": 500,
+      "activation_fn": "tanh",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        50,
+        0.005,
+        200,
+        "tanh",
+        0.5,
+        0.2
+      ],
+      "accuracy": 60.0,
+      "n_hidden": 50,
+      "learning_rate": 0.005,
+      "epochs": 200,
+      "activation_fn": "tanh",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        50,
+        0.005,
+        500,
+        "relu",
+        0.5,
+        0.2
+      ],
+      "accuracy": 60.0,
+      "n_hidden": 50,
+      "learning_rate": 0.005,
+      "epochs": 500,
+      "activation_fn": "relu",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        50,
+        0.005,
+        500,
+        "relu",
+        1.0,
+        0.2
+      ],
+      "accuracy": 60.0,
+      "n_hidden": 50,
+      "learning_rate": 0.005,
+      "epochs": 500,
+      "activation_fn": "relu",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        50,
+        0.005,
+        500,
+        "relu",
+        1.0,
+        0.3
+      ],
+      "accuracy": 60.0,
+      "n_hidden": 50,
+      "learning_rate": 0.005,
+      "epochs": 500,
+      "activation_fn": "relu",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        50,
+        0.005,
+        500,
+        "tanh",
+        0.5,
+        0.2
+      ],
+      "accuracy": 60.0,
+      "n_hidden": 50,
+      "learning_rate": 0.005,
+      "epochs": 500,
+      "activation_fn": "tanh",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        50,
+        0.01,
+        200,
+        "sigmoid",
+        1.0,
+        0.2
+      ],
+      "accuracy": 60.0,
+      "n_hidden": 50,
+      "learning_rate": 0.01,
+      "epochs": 200,
+      "activation_fn": "sigmoid",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        50,
+        0.01,
+        200,
+        "relu",
+        0.5,
+        0.2
+      ],
+      "accuracy": 60.0,
+      "n_hidden": 50,
+      "learning_rate": 0.01,
+      "epochs": 200,
+      "activation_fn": "relu",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        50,
+        0.01,
+        500,
+        "sigmoid",
+        0.5,
+        0.2
+      ],
+      "accuracy": 60.0,
+      "n_hidden": 50,
+      "learning_rate": 0.01,
+      "epochs": 500,
+      "activation_fn": "sigmoid",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        50,
+        0.01,
+        500,
+        "sigmoid",
+        1.0,
+        0.3
+      ],
+      "accuracy": 60.0,
+      "n_hidden": 50,
+      "learning_rate": 0.01,
+      "epochs": 500,
+      "activation_fn": "sigmoid",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        50,
+        0.01,
+        500,
+        "relu",
+        0.5,
+        0.2
+      ],
+      "accuracy": 60.0,
+      "n_hidden": 50,
+      "learning_rate": 0.01,
+      "epochs": 500,
+      "activation_fn": "relu",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        50,
+        0.01,
+        500,
+        "relu",
+        0.5,
+        0.3
+      ],
+      "accuracy": 60.0,
+      "n_hidden": 50,
+      "learning_rate": 0.01,
+      "epochs": 500,
+      "activation_fn": "relu",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        100,
+        0.005,
+        200,
+        "relu",
+        1.0,
+        0.2
+      ],
+      "accuracy": 60.0,
+      "n_hidden": 100,
+      "learning_rate": 0.005,
+      "epochs": 200,
+      "activation_fn": "relu",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        100,
+        0.005,
+        200,
+        "tanh",
+        1.0,
+        0.2
+      ],
+      "accuracy": 60.0,
+      "n_hidden": 100,
+      "learning_rate": 0.005,
+      "epochs": 200,
+      "activation_fn": "tanh",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        100,
+        0.01,
+        200,
+        "sigmoid",
+        0.5,
+        0.2
+      ],
+      "accuracy": 60.0,
+      "n_hidden": 100,
+      "learning_rate": 0.01,
+      "epochs": 200,
+      "activation_fn": "sigmoid",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        100,
+        0.01,
+        200,
+        "sigmoid",
+        1.0,
+        0.2
+      ],
+      "accuracy": 60.0,
+      "n_hidden": 100,
+      "learning_rate": 0.01,
+      "epochs": 200,
+      "activation_fn": "sigmoid",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        100,
+        0.01,
+        200,
+        "relu",
+        1.0,
+        0.2
+      ],
+      "accuracy": 60.0,
+      "n_hidden": 100,
+      "learning_rate": 0.01,
+      "epochs": 200,
+      "activation_fn": "relu",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        100,
+        0.01,
+        500,
+        "sigmoid",
+        1.0,
+        0.2
+      ],
+      "accuracy": 60.0,
+      "n_hidden": 100,
+      "learning_rate": 0.01,
+      "epochs": 500,
+      "activation_fn": "sigmoid",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        100,
+        0.01,
+        500,
+        "tanh",
+        0.5,
+        0.3
+      ],
+      "accuracy": 60.0,
+      "n_hidden": 100,
+      "learning_rate": 0.01,
+      "epochs": 500,
+      "activation_fn": "tanh",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        10,
+        0.01,
+        200,
+        "tanh",
+        1.0,
+        0.3
+      ],
+      "accuracy": 58.88888888888889,
+      "n_hidden": 10,
+      "learning_rate": 0.01,
+      "epochs": 200,
+      "activation_fn": "tanh",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        50,
+        0.01,
+        200,
+        "tanh",
+        1.0,
+        0.3
+      ],
+      "accuracy": 58.88888888888889,
+      "n_hidden": 50,
+      "learning_rate": 0.01,
+      "epochs": 200,
+      "activation_fn": "tanh",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        10,
+        0.005,
+        200,
+        "tanh",
+        0.5,
+        0.2
+      ],
+      "accuracy": 58.333333333333336,
+      "n_hidden": 10,
+      "learning_rate": 0.005,
+      "epochs": 200,
+      "activation_fn": "tanh",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        10,
+        0.005,
+        500,
+        "relu",
+        1.0,
+        0.2
+      ],
+      "accuracy": 58.333333333333336,
+      "n_hidden": 10,
+      "learning_rate": 0.005,
+      "epochs": 500,
+      "activation_fn": "relu",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        10,
+        0.01,
+        200,
+        "tanh",
+        1.0,
+        0.2
+      ],
+      "accuracy": 58.333333333333336,
+      "n_hidden": 10,
+      "learning_rate": 0.01,
+      "epochs": 200,
+      "activation_fn": "tanh",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        10,
+        0.01,
+        500,
+        "sigmoid",
+        1.0,
+        0.2
+      ],
+      "accuracy": 58.333333333333336,
+      "n_hidden": 10,
+      "learning_rate": 0.01,
+      "epochs": 500,
+      "activation_fn": "sigmoid",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        50,
+        0.005,
+        200,
+        "relu",
+        1.0,
+        0.2
+      ],
+      "accuracy": 58.333333333333336,
+      "n_hidden": 50,
+      "learning_rate": 0.005,
+      "epochs": 200,
+      "activation_fn": "relu",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        50,
+        0.005,
+        200,
+        "tanh",
+        1.0,
+        0.2
+      ],
+      "accuracy": 58.333333333333336,
+      "n_hidden": 50,
+      "learning_rate": 0.005,
+      "epochs": 200,
+      "activation_fn": "tanh",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        50,
+        0.005,
+        500,
+        "tanh",
+        1.0,
+        0.2
+      ],
+      "accuracy": 58.333333333333336,
+      "n_hidden": 50,
+      "learning_rate": 0.005,
+      "epochs": 500,
+      "activation_fn": "tanh",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        50,
+        0.01,
+        200,
+        "tanh",
+        1.0,
+        0.2
+      ],
+      "accuracy": 58.333333333333336,
+      "n_hidden": 50,
+      "learning_rate": 0.01,
+      "epochs": 200,
+      "activation_fn": "tanh",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        100,
+        0.001,
+        200,
+        "relu",
+        0.5,
+        0.2
+      ],
+      "accuracy": 58.333333333333336,
+      "n_hidden": 100,
+      "learning_rate": 0.001,
+      "epochs": 200,
+      "activation_fn": "relu",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        100,
+        0.001,
+        200,
+        "relu",
+        1.0,
+        0.2
+      ],
+      "accuracy": 58.333333333333336,
+      "n_hidden": 100,
+      "learning_rate": 0.001,
+      "epochs": 200,
+      "activation_fn": "relu",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        100,
+        0.001,
+        500,
+        "relu",
+        0.5,
+        0.2
+      ],
+      "accuracy": 58.333333333333336,
+      "n_hidden": 100,
+      "learning_rate": 0.001,
+      "epochs": 500,
+      "activation_fn": "relu",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        100,
+        0.001,
+        500,
+        "relu",
+        1.0,
+        0.2
+      ],
+      "accuracy": 58.333333333333336,
+      "n_hidden": 100,
+      "learning_rate": 0.001,
+      "epochs": 500,
+      "activation_fn": "relu",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        100,
+        0.005,
+        200,
+        "relu",
+        0.5,
+        0.2
+      ],
+      "accuracy": 58.333333333333336,
+      "n_hidden": 100,
+      "learning_rate": 0.005,
+      "epochs": 200,
+      "activation_fn": "relu",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        100,
+        0.005,
+        200,
+        "tanh",
+        0.5,
+        0.2
+      ],
+      "accuracy": 58.333333333333336,
+      "n_hidden": 100,
+      "learning_rate": 0.005,
+      "epochs": 200,
+      "activation_fn": "tanh",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        100,
+        0.01,
+        500,
+        "relu",
+        0.5,
+        0.2
+      ],
+      "accuracy": 58.333333333333336,
+      "n_hidden": 100,
+      "learning_rate": 0.01,
+      "epochs": 500,
+      "activation_fn": "relu",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        50,
+        0.005,
+        500,
+        "tanh",
+        0.5,
+        0.3
+      ],
+      "accuracy": 57.77777777777777,
+      "n_hidden": 50,
+      "learning_rate": 0.005,
+      "epochs": 500,
+      "activation_fn": "tanh",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        50,
+        0.005,
+        500,
+        "tanh",
+        1.0,
+        0.3
+      ],
+      "accuracy": 57.77777777777777,
+      "n_hidden": 50,
+      "learning_rate": 0.005,
+      "epochs": 500,
+      "activation_fn": "tanh",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        10,
+        0.01,
+        500,
+        "tanh",
+        1.0,
+        0.3
+      ],
+      "accuracy": 56.666666666666664,
+      "n_hidden": 10,
+      "learning_rate": 0.01,
+      "epochs": 500,
+      "activation_fn": "tanh",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        50,
+        0.01,
+        500,
+        "sigmoid",
+        1.0,
+        0.2
+      ],
+      "accuracy": 56.666666666666664,
+      "n_hidden": 50,
+      "learning_rate": 0.01,
+      "epochs": 500,
+      "activation_fn": "sigmoid",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        100,
+        0.005,
+        500,
+        "relu",
+        0.5,
+        0.2
+      ],
+      "accuracy": 56.666666666666664,
+      "n_hidden": 100,
+      "learning_rate": 0.005,
+      "epochs": 500,
+      "activation_fn": "relu",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        100,
+        0.01,
+        200,
+        "tanh",
+        0.5,
+        0.2
+      ],
+      "accuracy": 56.666666666666664,
+      "n_hidden": 100,
+      "learning_rate": 0.01,
+      "epochs": 200,
+      "activation_fn": "tanh",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        100,
+        0.01,
+        500,
+        "tanh",
+        0.5,
+        0.2
+      ],
+      "accuracy": 56.666666666666664,
+      "n_hidden": 100,
+      "learning_rate": 0.01,
+      "epochs": 500,
+      "activation_fn": "tanh",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        100,
+        0.01,
+        200,
+        "tanh",
+        1.0,
+        0.3
+      ],
+      "accuracy": 55.55555555555556,
+      "n_hidden": 100,
+      "learning_rate": 0.01,
+      "epochs": 200,
+      "activation_fn": "tanh",
+      "noise": 1.0,
+      "test_ratio": 0.3
+    },
+    {
+      "params": [
+        10,
+        0.01,
+        200,
+        "relu",
+        1.0,
+        0.2
+      ],
+      "accuracy": 55.00000000000001,
+      "n_hidden": 10,
+      "learning_rate": 0.01,
+      "epochs": 200,
+      "activation_fn": "relu",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        50,
+        0.01,
+        500,
+        "tanh",
+        0.5,
+        0.2
+      ],
+      "accuracy": 55.00000000000001,
+      "n_hidden": 50,
+      "learning_rate": 0.01,
+      "epochs": 500,
+      "activation_fn": "tanh",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        50,
+        0.01,
+        500,
+        "tanh",
+        1.0,
+        0.2
+      ],
+      "accuracy": 55.00000000000001,
+      "n_hidden": 50,
+      "learning_rate": 0.01,
+      "epochs": 500,
+      "activation_fn": "tanh",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        100,
+        0.005,
+        500,
+        "relu",
+        1.0,
+        0.2
+      ],
+      "accuracy": 55.00000000000001,
+      "n_hidden": 100,
+      "learning_rate": 0.005,
+      "epochs": 500,
+      "activation_fn": "relu",
+      "noise": 1.0,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        10,
+        0.005,
+        500,
+        "tanh",
+        0.5,
+        0.2
+      ],
+      "accuracy": 53.333333333333336,
+      "n_hidden": 10,
+      "learning_rate": 0.005,
+      "epochs": 500,
+      "activation_fn": "tanh",
+      "noise": 0.5,
+      "test_ratio": 0.2
+    },
+    {
+      "params": [
+        100,
+        0.01,
+        200,
+        "tanh",
+        0.5,
+        0.3
+      ],
+      "accuracy": 53.333333333333336,
+      "n_hidden": 100,
+      "learning_rate": 0.01,
+      "epochs": 200,
+      "activation_fn": "tanh",
+      "noise": 0.5,
+      "test_ratio": 0.3
+    }
+  ]
+}
