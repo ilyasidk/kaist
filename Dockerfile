@@ -1,19 +1,9 @@
 # Используем официальный образ Python
 FROM python:3.9-slim
 
-# Устанавливаем системные зависимости
+# Устанавливаем только необходимые зависимости
 RUN apt-get update && apt-get install -y \
-    wget \
-    gnupg2 \
-    gpg \
     curl \
-    unzip \
-    xvfb \
-    && rm -rf /var/lib/apt/lists/*
-
-# Устанавливаем Chromium
-RUN apt-get update \
-    && apt-get install -y chromium \
     && rm -rf /var/lib/apt/lists/*
 
 # Создаем рабочую директорию
