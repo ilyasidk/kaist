@@ -201,4 +201,14 @@ if __name__ == '__main__':
     
     # Запускаем Flask приложение
     port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port, debug=False) 
+    app.run(host='0.0.0.0', port=port, debug=False)
+
+# Добавляем простую проверку для Render
+@app.route('/health')
+def health_check():
+    """Простая проверка здоровья приложения"""
+    return jsonify({
+        'status': 'ok',
+        'chrome_running': chrome_running,
+        'timestamp': datetime.now().isoformat()
+    }) 
