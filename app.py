@@ -18,12 +18,16 @@ CHROME_OPTIONS = [
     '--no-sandbox',
     '--disable-dev-shm-usage',
     '--disable-gpu',
+    '--headless',  # Запуск в безголовом режиме
     '--remote-debugging-port=9222',
     '--user-data-dir=/tmp/chrome-data',
     '--disable-web-security',
     '--disable-features=VizDisplayCompositor',
     '--disable-extensions',
-    '--disable-plugins'
+    '--disable-plugins',
+    '--disable-background-timer-throttling',
+    '--disable-backgrounding-occluded-windows',
+    '--disable-renderer-backgrounding'
 ]
 
 # Настройки мониторинга
@@ -60,6 +64,7 @@ def start_chrome(url):
         if chrome_process.poll() is None:
             chrome_running = True
             print(f"Chrome успешно запущен с URL: {url}")
+            print(f"Chrome PID: {chrome_process.pid}")
             return True
         else:
             stdout, stderr = chrome_process.communicate()
