@@ -146,4 +146,7 @@ Thumbs.db
 
 # Temporary files
 *.tmp
-*.temp 
+*.temp
+
+# Configuration files with sensitive data
+config.py 
