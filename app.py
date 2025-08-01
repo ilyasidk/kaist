@@ -217,6 +217,8 @@ def health_check():
     })
 
 if __name__ == '__main__':
+    print("Запуск Chrome Manager как Background Service...")
+    
     # Запускаем мониторинг Chrome в отдельном потоке
     monitor_thread = threading.Thread(target=monitor_chrome, daemon=True)
     monitor_thread.start()
@@ -228,6 +230,13 @@ if __name__ == '__main__':
     except Exception as e:
         print(f"Ошибка при автоматическом запуске Chrome: {e}")
     
-    # Запускаем Flask приложение
-    port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port, debug=False) 
+    # Для Background Service просто держим процесс живым
+    print("Chrome Manager запущен. Держим процесс активным...")
+    try:
+        while True:
+            time.sleep(60)  # Проверяем каждую минуту
+            print("Chrome Manager активен...")
+    except KeyboardInterrupt:
+        print("Получен сигнал завершения, останавливаем Chrome...")
+        stop_chrome()
+        print("Chrome Manager завершен.") 

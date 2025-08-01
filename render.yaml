@@ -1,9 +1,6 @@
 services:
-  - type: web
+  - type: background
     name: kaist-chrome-manager
     env: docker
     plan: free
-    dockerfilePath: ./Dockerfile
-    envVars:
-      - key: PORT
-        value: 5000 
+    dockerfilePath: ./Dockerfile 

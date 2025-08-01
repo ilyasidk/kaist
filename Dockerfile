@@ -35,5 +35,5 @@ RUN mkdir -p /tmp/chrome-data && chmod 755 /tmp/chrome-data
 # Открываем порт
 EXPOSE 5000
 
-# Запускаем приложение
-CMD ["gunicorn", "--bind", "0.0.0.0:5000", "app:app"] 
+# Запускаем приложение как background service
+CMD ["python", "app.py"] 
