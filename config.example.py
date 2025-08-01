@@ -1,8 +1,5 @@
-# Пример конфигурации для авторизации Kaggle
-# Скопируйте этот файл как config.py и заполните реальными данными
-
-KAGGLE_USERNAME = "your_kaggle_username"  # Замените на ваш логин Kaggle
-KAGGLE_PASSWORD = "your_kaggle_password"  # Замените на ваш пароль Kaggle
+# Пример конфигурации для Chrome Manager
+# Скопируйте этот файл как config.py
 
 # URL по умолчанию
 DEFAULT_URL = "https://www.kaggle.com/code/ilyasmakhatov/notebook45e3b56ff8/edit"
@@ -17,9 +14,7 @@ CHROME_OPTIONS = [
     '--disable-web-security',
     '--disable-features=VizDisplayCompositor',
     '--disable-extensions',
-    '--disable-plugins',
-    '--disable-images',
-    '--disable-javascript'
+    '--disable-plugins'
 ]
 
 # Настройки мониторинга

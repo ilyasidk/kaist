@@ -17,7 +17,7 @@ chrome_url = DEFAULT_URL
 chrome_running = False
 
 def start_chrome(url):
-    """Запускает Chrome с указанным URL и автоматической авторизацией"""
+    """Запускает Chrome с указанным URL"""
     global chrome_process, chrome_running
     
     try:
@@ -26,7 +26,7 @@ def start_chrome(url):
             chrome_process.terminate()
             time.sleep(2)
         
-        # Команда для запуска Chrome с авторизацией Kaggle
+        # Команда для запуска Chrome
         chrome_cmd = ['google-chrome'] + CHROME_OPTIONS + [url]
         
         # Запускаем Chrome
@@ -34,10 +34,6 @@ def start_chrome(url):
         
         chrome_running = True
         print(f"Chrome запущен с URL: {url}")
-        
-        # Запускаем автоматическую авторизацию в отдельном потоке
-        auth_thread = threading.Thread(target=auto_login_kaggle, daemon=True)
-        auth_thread.start()
         
         return True
         
@@ -73,65 +69,7 @@ def restart_chrome():
     time.sleep(1)
     return start_chrome(chrome_url)
 
-def auto_login_kaggle():
-    """Автоматическая авторизация на Kaggle"""
-    import requests
-    from selenium import webdriver
-    from selenium.webdriver.common.by import By
-    from selenium.webdriver.support.ui import WebDriverWait
-    from selenium.webdriver.support import expected_conditions as EC
-    from selenium.webdriver.chrome.options import Options
-    
-    try:
-        print("Начинаем автоматическую авторизацию на Kaggle...")
-        
-        # Настройки Chrome для автоматизации
-        chrome_options = Options()
-        for option in CHROME_OPTIONS:
-            chrome_options.add_argument(option)
-        
-        # Подключаемся к уже запущенному Chrome
-        driver = webdriver.Chrome(options=chrome_options)
-        
-        # Переходим на страницу входа Kaggle
-        driver.get("https://www.kaggle.com/account")
-        
-        # Ждем появления формы входа
-        wait = WebDriverWait(driver, 10)
-        
-        # Ищем поля для ввода логина и пароля
-        try:
-            username_field = wait.until(EC.presence_of_element_located((By.NAME, "username")))
-            password_field = driver.find_element(By.NAME, "password")
-            
-            # Вводим данные
-            username_field.clear()
-            username_field.send_keys(KAGGLE_USERNAME)
-            
-            password_field.clear()
-            password_field.send_keys(KAGGLE_PASSWORD)
-            
-            # Нажимаем кнопку входа
-            login_button = driver.find_element(By.XPATH, "//button[@type='submit']")
-            login_button.click()
-            
-            print("Авторизация выполнена успешно!")
-            
-            # Ждем загрузки и переходим к нужной странице
-            time.sleep(5)
-            driver.get(chrome_url)
-            
-        except Exception as e:
-            print(f"Ошибка при авторизации: {e}")
-            # Если авторизация не удалась, просто переходим к URL
-            driver.get(chrome_url)
-        
-        # Держим браузер открытым
-        while chrome_running:
-            time.sleep(10)
-            
-    except Exception as e:
-        print(f"Ошибка автоматической авторизации: {e}")
+
 
 def monitor_chrome():
     """Мониторинг состояния Chrome"""
