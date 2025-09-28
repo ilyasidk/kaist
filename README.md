@@ -6,7 +6,7 @@ This repository contains various implementations and optimizations of the FAST (
 
 The KAIST project focuses on computer vision algorithms, specifically the FAST corner detection algorithm, with multiple implementations and optimization strategies!!!!
 
-## Files Description
+## Files Descriptio
 
 
 ### Core FAST Implementations
