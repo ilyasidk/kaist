@@ -80,7 +80,6 @@ The project includes saved results from hyperparameter optimization runs and ana
 ## Contributing
 
 Feel free to contribute by:
-- Improving existing implementations
 - Adding new optimization strategies
 - Enhancing documentation
 - Reporting issues
