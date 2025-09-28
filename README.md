@@ -1,4 +1,4 @@
-# KAIST Project
+# KAIST Project.
 
 This repository contains various implementations and optimizations of the FAST (Features from Accelerated Segment Test) algorithm, along with hyperparameter optimization tools and analysis scripts.
 
