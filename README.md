@@ -11,7 +11,7 @@ The KAIST project focuses on computer vision algorithms, specifically the FAST c
 
 ### Core FAST Implementations
 - `FAST.py` - Basic FAST algorithm implementation
-- `FAST_improved.py` - Enhanced version with optimizations
+- `FAST_improved.py` - Enhanced version with optimizations.
 - `FAST_final.py` - Final optimized version
 - `FAST_no_numba.py` - FAST implementation without Numba acceleration
 - `FAST_mega_search.py` - Comprehensive search implementation
