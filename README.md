@@ -2,7 +2,7 @@
 
 This repository contains various implementations and optimizations of the FAST (Features from Accelerated Segment Test) algorithm, along with hyperparameter optimization tools and analysis scripts.
 
-## Project Overview.
+## Project Overview
 
 
 The KAIST project focuses on computer vision algorithms, specifically the FAST corner detection algorithm, with multiple implementations and optimization strategies!
